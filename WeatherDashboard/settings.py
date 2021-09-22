@@ -78,25 +78,25 @@ WSGI_APPLICATION = 'WeatherDashboard.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-if DEBUG == True:
-    DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        }
+
+DATABASES = {
+'default': {
+    'ENGINE': 'django.db.backends.sqlite3',
+    'NAME': BASE_DIR / 'db.sqlite3',
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'ciba',
-            'HOST': "ec2-34-233-105-94.compute-1.amazonaws.com",
-            "DATABASE":"d638bgb01q9rn8",
-            "USER":"hnuwmlmxlpnvdg",
-            "PORT":5432,
-            "PASSWORD":"3e0d948f7de0e730a1fe18fe45da65041efda56cd89e44262c8be7d83ada0119"
-        }
-    }
+}
+# else:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': 'ciba',
+#             'HOST': "ec2-34-233-105-94.compute-1.amazonaws.com",
+#             "DATABASE":"d638bgb01q9rn8",
+#             "USER":"hnuwmlmxlpnvdg",
+#             "PORT":5432,
+#             "PASSWORD":"3e0d948f7de0e730a1fe18fe45da65041efda56cd89e44262c8be7d83ada0119"
+#         }
+#     }
 
 
 # Password validation
