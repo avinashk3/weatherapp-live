@@ -90,6 +90,11 @@ else:
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'ciba',
+            'HOST': "ec2-34-233-105-94.compute-1.amazonaws.com",
+            "DATABASE":"d638bgb01q9rn8",
+            "USER":"hnuwmlmxlpnvdg",
+            "PORT":5432,
+            "PASSWORD":"3e0d948f7de0e730a1fe18fe45da65041efda56cd89e44262c8be7d83ada0119"
         }
     }
 

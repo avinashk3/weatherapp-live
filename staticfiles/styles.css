@@ -1,0 +1,43 @@
+@media only screen and (min-width:767px){
+    #sideform{ 
+        min-height: 100%; 
+    }
+}
+
+
+#sideform{ 
+    height:100%;
+    background: linear-gradient(45deg, #fff, #8893ff);
+
+}
+
+.btn, .city-input{
+    border-radius: 20px;
+}
+
+#sideform p{
+    font-size:2rem;
+}
+
+.card{
+    background-color: transparent;
+}
+
+#dashboard-card{
+    /* background-image:url(https://i.picsum.photos/id/100/2500/1656.jpg?hmac=gWyN-7ZB32rkAjMhKXQgdHOIBRHyTSgzuOK6U0vXb1w); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100px;
+}
+
+form{
+    padding: 1rem 0rem  2rem 0rem;
+}
