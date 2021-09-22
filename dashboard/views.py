@@ -10,7 +10,7 @@ def home(request):
     form = CityForm()
     context = {}
     if request.method == 'POST':
-        print("post")
+        
         form = CityForm(request.POST)
         if form.is_valid():
             form.save()
@@ -20,9 +20,17 @@ def home(request):
             
 
     elif request.method == "GET":
-        city_name = City.objects.latest("date_added").city_name
-        weather_data = getweatherdata(city_name)    
-    
+        a = City.objects.first()
+  
+        if not a:
+            weather_data = None
+        else:
+            city_name = City.objects.latest("date_added").city_name
+            print(city_name)
+            
+            weather_data = getweatherdata(city_name)    
+            print(weather_data)
+            
     context['weather_data'] = weather_data
     context['form'] = form
 
